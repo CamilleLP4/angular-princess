@@ -1,4 +1,7 @@
-<h2>{{ inputPrincess.name }}</h2>
+<h2>
+  <a *ngIf="inputPrincess.script; else pNameBlock" [routerLink]="['script', iPrincessId]">{{ inputPrincess.name }}</a>
+  <ng-template #pNameBlock>{{ inputPrincess.name }}</ng-template>
+  </h2>
   <p>Année de sortie : {{ inputPrincess.year }}</p>
   <img *ngIf="inputPrincess.imageUrl" [alt]="'Photo de ' + inputPrincess.name" [src]="inputPrincess.imageUrl">
   <p>Nombre de likes : {{inputPrincess.like}}</p>

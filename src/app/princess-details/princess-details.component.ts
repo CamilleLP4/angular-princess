@@ -8,6 +8,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class PrincessDetailsComponent implements OnInit {
 
   @Input() inputPrincess;
+  @Input() iPrincessId;
   @Output() like = new EventEmitter();
 
   constructor() { }

@@ -1,1 +1,13 @@
 /* Add application styles & imports to this file! */
+h1 {
+  color: brown;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: green
+  }
