@@ -1,0 +1,4 @@
+<div *ngFor="let princess of princesses; index as princessId">
+  <app-princess-details [inputPrincess]="princess" (like)="like(princessId)"></app-princess-details>
+  
+</div>
