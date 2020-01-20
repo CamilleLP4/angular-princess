@@ -8,6 +8,7 @@ import { PrincessListComponent } from './princess-list/princess-list.component';
 import { PrincessDetailsComponent } from './princess-details/princess-details.component';
 import { PrincessScriptComponent } from './princess-script/princess-script.component';
 import { FourOFourComponent } from './four-o-four/four-o-four.component';
+import { PrincessService } from './princess.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,
@@ -18,6 +19,7 @@ import { FourOFourComponent } from './four-o-four/four-o-four.component';
     ])
   ],
   declarations: [ AppComponent, PrincessListComponent, PrincessDetailsComponent, PrincessScriptComponent, FourOFourComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [PrincessService]
 })
 export class AppModule { }

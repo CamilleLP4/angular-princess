@@ -18,4 +18,8 @@ export class PrincessListComponent implements OnInit {
   like(princessId){
     this.princesses[princessId].like++;
   }
+
+  addPrincess(){
+    this.princesses.push({ name: 'Philippe', year: 2019, imageUrl:'', script: 'c\'est rigolo', like: 0});
+  }
 }
