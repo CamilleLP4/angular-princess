@@ -1,0 +1,24 @@
+<form [formGroup]="princessForm" (ngSubmit)="onNewPrincess(princessForm.value)">
+    <div class="form-field">
+        <label for="name">Nom de la Princesse: </label>
+        <input id="name" type="text" formControlName="name">
+      </div>
+    
+      <div class="form-field">
+        <label for="year">Année : </label>
+        <input id="year" type="number" min="1900" max="2020" formControlName="year">
+      </div>
+
+      <div class="form-field">
+        <label for="imageUrl">Image : </label>
+        <input id="imageUrl" type="text" formControlName="imageUrl">
+      </div>
+
+      <div class="form-field">
+        <label for="script">Synopsis : </label>
+        <textarea id="script" formControlName="script"
+          rows="5" cols="33">
+        </textarea>
+      </div>
+    
+      <button class="button" type="submit">Create Princess</button>

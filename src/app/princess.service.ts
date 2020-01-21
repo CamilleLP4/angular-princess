@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { princessList } from './princessList.ts'
+import { princessList } from './princessList'
 
 @Injectable()
 export class PrincessService {

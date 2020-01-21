@@ -1,5 +1,6 @@
-<button (click)="addPrincess()">Ajouter une princesse</button>
 
+<button (click)="addPrincess()">Ajouter une princesse</button>
+<app-princess-form *ngIf="showAddPrincess" (newPrincess)="addPrincess()"></app-princess-form>
 <div *ngFor="let princess of princesses; index as princessId">
   <app-princess-details [inputPrincess]="princess" [iPrincessId]="princessId" (like)="like(princessId)"></app-princess-details>
   

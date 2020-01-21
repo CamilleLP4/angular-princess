@@ -1,0 +1,14 @@
+.form-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 5px;
+}
+
+label {
+    min-width: 350px;
+}
+
+input {
+    min-width: 200px;
+}
