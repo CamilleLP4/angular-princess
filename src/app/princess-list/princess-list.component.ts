@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { princessList } from "../princessList.ts"
+
+import { PrincessService } from '../princess.service';
 
 @Component({
   selector: 'app-princess-list',
@@ -8,9 +9,9 @@ import { princessList } from "../princessList.ts"
 })
 export class PrincessListComponent implements OnInit {
 
-  princesses = princessList;
+  princesses = this.princessService.princessList;
 
-  constructor() { }
+  constructor(private princessService: PrincessService) { }
 
   ngOnInit() {
   }
